@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/auth-secret: basic-auth
     ingress.kubernetes.io/auth-realm: "Authentication Required"
     alb.ingress.kubernetes.io/scheme: internet-facing
-    external-dns.alpha.kubernetes.io/hostname: "monitor.k8s.hackerrank.link."
+    external-dns.alpha.kubernetes.io/hostname: monitor.k8s.hackerrank.link
     alb.ingress.kubernetes.io/subnets: subnet-d30c46aa, subnet-b1becafa, subnet-81cce9db
 spec:
   rules:
