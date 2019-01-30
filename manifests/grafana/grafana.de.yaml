@@ -19,14 +19,8 @@ spec:
         name: grafana
         ports:
         - containerPort: 3000
-          name: http
+          name: web
         resources:
-          limits:
-            cpu: 200m
-            memory: 200Mi
-          requests:
-            cpu: 100m
-            memory: 100Mi
         volumeMounts:
         - mountPath: /var/lib/grafana
           subPath: grafana

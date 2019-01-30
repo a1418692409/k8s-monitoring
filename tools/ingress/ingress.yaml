@@ -31,7 +31,7 @@ spec:
   - host: grafana.k8s.hackerrank.link
     http:
       paths:
-      - path: /
+      - path: /*
         backend:
           serviceName: grafana
           servicePort: 3000
