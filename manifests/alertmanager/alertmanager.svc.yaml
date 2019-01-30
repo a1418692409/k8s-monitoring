@@ -12,3 +12,4 @@ spec:
     targetPort: web
   selector:
     alertmanager: main
+  type: NodePort

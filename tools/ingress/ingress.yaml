@@ -7,9 +7,11 @@ metadata:
     ingress.kubernetes.io/auth-type: basic
     ingress.kubernetes.io/auth-secret: basic-auth
     ingress.kubernetes.io/auth-realm: "Authentication Required"
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    external-dns.alpha.kubernetes.io/hostname: monitor.k8s.hackerrank.link
-    alb.ingress.kubernetes.io/subnets: subnet-d30c46aa, subnet-b1becafa, subnet-81cce9db
+    alb.ingress.kubernetes.io/scheme: internal
+    external-dns.alpha.kubernetes.io/hostname: monitor.k8s.hackerrank.link.
+    alb.ingress.kubernetes.io/subnets: subnet-06c0f5c1e96f8c96a, subnet-036eead9b51ff6b0e
+    alb.ingress.kubernetes.io/backend: HTTP
+    alb.ingress.kubernetes.io/security-groups: sg-5874b712
 spec:
   rules:
   - host: prometheus.k8s.hackerrank.link
